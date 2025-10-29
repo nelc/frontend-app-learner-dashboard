@@ -48,9 +48,10 @@ pull_translations:
                translations/frontend-platform/src/i18n/messages:frontend-platform \
                translations/paragon/src/i18n/messages:paragon \
                translations/frontend-component-footer/src/i18n/messages:frontend-component-footer \
-               translations/frontend-app-learner-dashboard/src/i18n/messages:frontend-app-learner-dashboard
+               translations/frontend-app-learner-dashboard/src/i18n/messages:frontend-app-learner-dashboard \
+               translations/frontend-essentials/src/i18n/messages:frontend-essentials
 
-	$(intl_imports) frontend-platform paragon frontend-component-footer frontend-app-learner-dashboard
+	$(intl_imports) frontend-platform paragon frontend-component-footer frontend-app-learner-dashboard frontend-essentials
 
 # This target is used by CI.
 validate-no-uncommitted-package-lock-changes:
