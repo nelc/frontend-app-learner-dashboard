@@ -16,3 +16,20 @@ module.exports = createConfig('jest', {
   testTimeout: 120000,
   testEnvironment: 'jsdom',
 });
+
+module.exports.transformIgnorePatterns = [
+  '/node_modules/(?!(@edx|@edunext|@openedx))',
+];
+
+module.exports.transform["^.+\\.[tj]sx?$"] = [
+  'ts-jest',
+  {
+    isolatedModules: true,
+    diagnostics: false,
+    tsconfig: {
+      jsx: 'react-jsx',
+      esModuleInterop: true,
+      allowSyntheticDefaultImports: true
+    }
+  }
+]
