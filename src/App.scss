@@ -9,6 +9,10 @@ $input-focus-box-shadow: var(--pgn-elevation-form-input-base); // hack to get up
 @import "~@edx/frontend-component-header/dist/index";
 @import "~@edx/frontend-component-footer/dist/_footer";
 
+@import "@edx/brand/paragon/fonts";
+@import "@edx/brand/paragon/variables";
+@import "@edx/brand/paragon/overrides";
+
 .text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
